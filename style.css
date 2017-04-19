@@ -227,7 +227,9 @@ display: block;
   text-decoration: none;
   font-family: "Sawarabi Gothic"; 
 }
-
+.contact_icon_item:hover{
+  text-decoration: none;
+}
 /*質問項目（？）*/
 .introduce{
   width: 250px;
