@@ -41,6 +41,7 @@
 /*topページmain*/
 .main{
   width: 700px;
+  height: 600px;
   margin: 0 auto;
   padding-top: 20px;
   box-sizing: border-box;
@@ -75,32 +76,32 @@
 /*js*/
 .profile_image_rina{
   width: 220px;
-  box-shadow: 0 1px 5px gray;
+  box-shadow: 2px 2px 3px gray;
   display: none;
 }
 .profile_image_tomita{
   width: 220px;
-  box-shadow: 0 1px 5px gray;
+  box-shadow: 2px 2px 3px gray;
   display: none;
 }
 .profile_image_fuku{
   width: 220px;
-  box-shadow: 0 1px 5px gray;
+  box-shadow: 2px 2px 3px gray;
   display: none;
 }
 .profile_image_izumi{
   width: 220px;
-  box-shadow: 0 1px 5px gray;
+  box-shadow: 2px 2px 3px gray;
   display: none;
 }
 .profile_image_kou{
   width: 220px;
-  box-shadow: 0 1px 5px gray;
+  box-shadow: 2px 2px 3px gray;
   display: none;
 }
 .profile_image_hana{
   width: 220px;
-  box-shadow: 0 1px 5px gray;
+  box-shadow: 2px 2px 3px gray;
   display: none;
 }
 
@@ -108,9 +109,6 @@
 /*フッター*/
 /*トップページフッター*/
 .top_footer{
-  position: fixed;
-  width: 100%;
-  bottom: 0;
   height: 30px;
   background: gray;
   margin-top: 20px;
@@ -199,18 +197,23 @@ display: block;
 .name_en{
   font-size: 12px;
   margin-top: 20px;
+  font-family: "Sawarabi Gothic"; 
 }
 .name_ja{
   font-size: 20px;
   margin-top: 7px;
+  font-family: "Sawarabi Gothic"; 
+  font-weight: normal;
 }
 .birthday{
   font-size: 14px;
   margin-top: 30px;
+  font-family: "Sawarabi Gothic"; 
 }
 .bloodType{
   font-size: 14px;
   margin-top: 15px;
+  font-family: "Sawarabi Gothic"; 
 }
 .contact_icon{
 
@@ -224,7 +227,9 @@ display: block;
   text-decoration: none;
   font-family: "Sawarabi Gothic"; 
 }
-
+.contact_icon_item:hover{
+  text-decoration: none;
+}
 /*質問項目（？）*/
 .introduce{
   width: 250px;
