@@ -222,7 +222,7 @@ display: block;
   width: 250px;
   padding: 10px;
   box-sizing: border-box;
-  border-right: 1px solid #ea535d;
+  /*border-right: 1px solid #ea535d;*/
 }
 .introduce_contents{
   padding: 0 5px;
@@ -244,7 +244,7 @@ display: block;
 .chronology{
   width: 350px;
   box-sizing: border-box;
-  border-right: 1px solid #ea535d;
+  /*border-right: 1px solid #ea535d;*/
 }
 .year_wrap{
   width: 100%;
