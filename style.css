@@ -5,7 +5,7 @@ body{
     line-height: 100vh;
 	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 	background-size: 400% 400%;
-	animation: Gradient 15s ease infinite;
+	animation: Gradient 5s ease infinite;
 }
 
 p{
@@ -25,5 +25,25 @@ p{
 	}
 	100% {
 		background-position: 0% 50%
+	}
+}
+
+
+@media screen and (max-width:880px){
+	p{
+		font-size:64px;
+		font-family: "Hannari";
+		color:#fff;
+		margin:0;
+	}
+}
+
+
+@media screen and (max-width:480px){
+	p{
+		font-size:42px;
+		font-family: "Hannari";
+		color:#fff;
+		margin:0;
 	}
 }
