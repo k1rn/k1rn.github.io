@@ -27,10 +27,6 @@ time, mark, audio, video {
     background:transparent;
 }
 
-body {
-    line-height:1;
-}
-
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section { 
     display:block;
@@ -102,10 +98,6 @@ html, body{
 body {
   background: #FAFAFA;
   font-family: sans-serif;
-}
-p{
-  font-size: 0.8rem;
-  line-height: 1.2rem;
 }
 img{
   width: 100%;
