@@ -31,7 +31,7 @@ p{
 
 @media screen and (max-width:880px){
 	p{
-		font-size:64px;
+		font-size:50px;
 		font-family: "Hannari";
 		color:#fff;
 		margin:0;
@@ -41,7 +41,7 @@ p{
 
 @media screen and (max-width:480px){
 	p{
-		font-size:42px;
+		font-size:28px;
 		font-family: "Hannari";
 		color:#fff;
 		margin:0;
