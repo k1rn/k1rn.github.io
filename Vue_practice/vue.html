@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue.js</title>
+    <link href="https://fonts.googleapis.com/css?family=Palanquin+Dark" rel="stylesheet">
+    <style>
+    body,p{
+        margin:0;
+    }
+    input[type=text]{
+        width: 400px;
+        height: 60px;
+        outline:none;
+        border: 2px solid #999;
+        border-radius: 5px;
+        font-size:20px;
+    }
+
+    .btn-toggle {
+        width: 200px;
+        height: 80px;
+        padding: 10px;
+        color: #fff;
+        background-color: #333;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: thin;
+        box-shadow: #000 1px 1px 1px;
+    }
+
+    .btn-toggle.is-active {
+        background-color: brown;
+    }
+
+    .content{
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        line-height: 100vh;
+        font-size :100px;
+        color: #fff;
+        font-family: 'Palanquin Dark', sans-serif;
+        background: linear-gradient(-45deg, #64B587, #39495C,rgb(83, 173, 122), rgb(112, 137, 168));
+        background-size: 400% 400%;
+        animation: Gradient 5s ease infinite;
+    }
+    @keyframes Gradient {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="app2" class="content">
+        <p>{{message2}}</p>
+    </div>
+    <div id="app">
+        <h1 v-if="num >= 10">１０以上</h1>
+        <h2 v-else-if="num >= 5">５以上</h2>
+        <h3 v-else>４未満</h3>
+        <input v-model="message" type="text" placeholder="ここに入力したテキストが下に出てくるよ">
+        <p>{{message}}</p>
+        <ul>
+            <li v-for="todo in todos">
+                <p>{{todo.id}} {{todo.text}}</p>
+            </li>
+        </ul>
+
+        <input 
+            type="button" 
+            value="ボタンだよ"
+            class="btn-toggle"
+            @click="tapButton()"
+            :class="{'is-active': toggleFlag}"
+        />
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    var app = new Vue({
+        el: "#app",
+        data() {
+            return {
+            message: "",
+            num: 10,
+            todos: [
+                {id:1, text:"Vue.jsの勉強をはじめました。"},
+                {id:2, text:"今のところ順調です。"},
+                {id:3, text:"がんばります！"}
+                ],
+            toggleFlag: false, 
+            }
+        },
+        methods: {
+            tapButton() {
+                this.toggleFlag = !this.toggleFlag;
+            }
+        }
+    });
+    var app2 = new Vue({
+        el: "#app2",
+        data() {
+            return {
+            message2: "Hello,Vue.js"}
+        }
+    });
+</script>
+
+</html>
